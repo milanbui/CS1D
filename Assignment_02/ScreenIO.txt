@@ -1,0 +1,144 @@
+***************************************************************************
+*	PROGRAMMED BY : Milan Bui
+*	CLASS         : CS1D
+*	SECTION       : MW: 2:30p - 4:50p
+*	ASSIGNMENT #2 : Stacks, Queues, and Deques
+***************************************************************************
+
+This program will:
+1. Create a stack of strings and a stack of doubles using the STL <stack>
+   and output the stacks
+2. Remove Eric and 8.445 from their respective stacks and display the 
+   stack after the change
+3. Do the same but with a stack using a linked list, a queue using a linked
+   list, and a deque using a doubly linked list.(It will remove Eric from
+   the front and 8.445 from the back of the deques)
+4. Check to see if the parentheses of several mathematical statements match
+
+PART A
+-------
+Don
+Alan
+Mark
+Bill
+Eric
+JoAnn
+Jennifer
+
+983.88
+8.445
+456.123
+88.88
+888.77
+44.44
+
+PART B
+-------
+JoAnn
+Jennifer
+
+456.123
+88.88
+888.77
+44.44
+
+PART C
+-------
+Don
+Alan
+Mark
+Bill
+Eric
+JoAnn
+Jennifer
+
+983.88
+8.445
+456.123
+88.88
+888.77
+44.44
+
+PART D
+-------
+JoAnn
+Jennifer
+
+456.123
+88.88
+888.77
+44.44
+
+PART E
+-------
+Jennifer
+JoAnn
+Eric
+Bill
+Mark
+Alan
+Don
+
+44.44
+888.77
+88.88
+456.123
+8.445
+983.88
+
+PART F
+-------
+Bill
+Mark
+Alan
+Don
+
+983.88
+
+PART G
+-------
+Don
+Alan
+Mark
+Bill
+Eric
+JoAnn
+Jennifer
+
+983.88
+8.445
+456.123
+88.88
+888.77
+44.44
+
+PART H
+-------
+JoAnn
+Jennifer
+
+983.88
+
+PART I
+-------
+Statement: {(8x+5)-6x[9x+3]]
+The grouping symbols in {(8x+5)-6x[9x+3]] do not match.
+
+Statement: {{8x+5)-5x[9x+3]})
+The grouping symbols in {{8x+5)-5x[9x+3]}) do not match.
+
+Statement: {2x+5}(6x+4)
+All of the grouping symbols in {2x+5}(6x+4) match.
+
+Statement: (((4x+8)-x[4x+3])))
+The grouping symbols in (((4x+8)-x[4x+3]))) do not match.
+
+Statement: [(5x+5)-4x[6x+2]]
+All of the grouping symbols in [(5x+5)-4x[6x+2]] match.
+
+Statement: [12x+8][2x+77]
+All of the grouping symbols in [12x+8][2x+77] match.
+
+Statement: (2x-8)(12x+6]
+The grouping symbols in (2x-8)(12x+6] do not match.
+
