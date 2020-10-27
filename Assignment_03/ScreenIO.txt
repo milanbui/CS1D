@@ -1,0 +1,102 @@
+***************************************************************************
+*	PROGRAMMED BY : Milan Bui
+*	CLASS         : CS1D
+*	SECTION       : MW: 2:30p - 4:50p
+*	ASSIGNMENT #3 : Extendable Arrays
+***************************************************************************
+
+This program will:
+1. Create a vector using an expandable array that works in a 
+   circular manner
+2. Test all the methods: at(), insert(), set(), erase(), size(),  
+   and empty()
+3. Add eight numbers, delete 14, delete 1, insert 9 at the front,
+   insert 7 after 33, insert 44 at the end, set the end to 88,
+   and obtain the front and rear
+4. Display the vector after every change with the index and the 
+   value, display the front and the rear, whether or not it is
+   is empty, and how many integers are in the vector
+
+INTEGER VECTOR IS EMPTY
+
+INSERTING NUMBERS
+0 - 14
+1 - 5
+2 - 4
+3 - 1
+4 - 22
+5 - 33
+6 - 44
+7 - 88
+
+
+DELETING 14
+1 - 5
+2 - 4
+3 - 1
+4 - 22
+5 - 33
+6 - 44
+7 - 88
+
+
+DELETING 1
+1 - 5
+2 - 4
+3 - 22
+4 - 33
+5 - 44
+6 - 88
+
+
+INSERTING 9 IN FRONT
+0 - 9
+1 - 5
+2 - 4
+3 - 22
+4 - 33
+5 - 44
+6 - 88
+
+
+INSERTING 7 AFTER 33
+0 - 9
+1 - 5
+2 - 4
+3 - 22
+4 - 33
+5 - 7
+6 - 44
+7 - 88
+
+
+INSERTING 44 IN REAR
+0 - 9
+1 - 5
+2 - 4
+3 - 22
+4 - 33
+5 - 7
+6 - 44
+7 - 88
+8 - 44
+
+
+SETTING 88 IN REAR
+0 - 9
+1 - 5
+2 - 4
+3 - 22
+4 - 33
+5 - 7
+6 - 44
+7 - 88
+8 - 88
+
+
+FRONT: 0 - 9
+REAR : 8 - 88
+
+INTEGER VECTOR IS NOT EMPTY
+
+There are 9 integers in the vector
