@@ -1,0 +1,53 @@
+***************************************************************************
+*	PROGRAMMED BY : Milan Bui
+*	CLASS         : CS1D
+*	SECTION       : MW: 2:30p - 4:50p
+*	ASSIGNMENT #5 : Priority Queues
+***************************************************************************
+
+THIS PROGRAM WILL:
+1. Create a priority queue of patients without an STL and with an STL
+2. Create the queue with those with longer wait time higher in
+   priority and those in critical condition in highest priority
+3. Calculate the start and end time of their care with each patient
+   receiving 25 minutes of care excluding the time when their
+   care is interrupted if it is interrupted
+4. Display the patients, their wait time or if in critical condition,
+   their start time, and their end time
+
+
+******************EMERGENCY ROOM PRIORITY QUEUE USING STL******************
+
+PATIENT NAME             WAIT TIME (HOURS)        START TIME     END TIME
+---------------------------------------------------------------------------
+Alice Ailment            8                        12:00 PM       12:50 PM       
+Paula Pain               - LIFE THREATENING -     12:19 PM       12:44 PM       
+Tom Temperature          7                        12:50 PM       13:16 PM       
+Bob Bleeding             6                        13:16 PM       13:42 PM       
+Frank Feelingbad         5                        13:42 PM       14:08 PM       
+Sam Sneezing             4                        14:08 PM       14:58 PM       
+Sid Sickly               - LIFE THREATENING -     14:21 PM       14:46 PM       
+Cathy Coughing           3                        14:58 PM       15:24 PM       
+Irene Ill                1                        15:24 PM       15:50 PM       
+
+***************************************************************************
+
+
+
+
+*****************EMERGENCY ROOM PRIORITY QUEUE WITHOUT STL*****************
+
+PATIENT NAME             WAIT TIME (HOURS)        START TIME     END TIME
+---------------------------------------------------------------------------
+Alice Ailment            8                        12:00 PM       12:50 PM       
+Paula Pain               - LIFE THREATENING -     12:19 PM       12:44 PM       
+Tom Temperature          7                        12:50 PM       13:16 PM       
+Bob Bleeding             6                        13:16 PM       13:42 PM       
+Frank Feelingbad         5                        13:42 PM       14:08 PM       
+Sam Sneezing             4                        14:08 PM       14:58 PM       
+Sid Sickly               - LIFE THREATENING -     14:21 PM       14:46 PM       
+Cathy Coughing           3                        14:58 PM       15:24 PM       
+Irene Ill                1                        15:24 PM       15:50 PM       
+
+***************************************************************************
+
