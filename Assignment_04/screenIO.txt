@@ -1,0 +1,60 @@
+***************************************************************************
+*	PROGRAMMED BY : Milan Bui
+*	CLASS         : CS1D
+*	SECTION       : MW: 2:30p - 4:50p
+*	ASSIGNMENT #4 : Binary Trees
+***************************************************************************
+
+THIS PROGRAM WILL:
+1. Create a binary search tree
+2. Perform and display an in order traversal
+3. Perform and display an pre order traversal
+4. Perform and display an post order traversal
+5. Perform and display an breadth first traversal
+6. Display the binary tree by level
+7. Display the parent-child relationships
+
+
+IN ORDER TRAVERSAL:
+7 12 13 18 19 24 25 28 33 44 49 55 59 88 89 109 118 888 1001 
+
+PRE ORDER TRAVERSAL:
+109 7 12 13 18 19 24 25 28 33 44 49 55 59 88 89 118 888 1001 
+
+POST ORDER TRAVERSAL:
+7 12 13 18 19 24 25 28 33 44 49 55 59 88 89 118 888 1001 109 
+
+BREADTH FIRST TRAVERSAL:
+109 55 118 33 89 1001 18 44 88 888 12 24 49 59 7 13 19 25 28 
+
+PRINT TREE BY LEVEL:
+109 
+55 118 
+33 89 1001 
+18 44 88 888 
+12 24 49 59 
+7 13 19 25 
+28 
+
+DISPLAY PARENT-CHILD RELATIONSHIPS:
+109  : root
+55   : left child of 109
+118  : right child of 109
+33   : left child of 55
+89   : right child of 55
+1001 : right child of 118
+18   : left child of 33
+44   : right child of 33
+88   : left child of 89
+888  : left child of 1001
+12   : left child of 18
+24   : right child of 18
+49   : right child of 44
+59   : left child of 88
+7    : left child of 12
+13   : right child of 12
+19   : left child of 24
+25   : right child of 24
+28   : right child of 25
+
+
