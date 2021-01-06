@@ -1,0 +1,80 @@
+*****************************************************************************************************************************
+*  PROGRAMMED BY  : Milan Bui & Hai-Trang Nguyen
+*  CLASS          : CS1D
+*  SECTION        : MW 2:30 - 4:50
+*  ASSIGNMENT #10 : DFS
+*****************************************************************************************************************************
+
+
+This program will:
+1. Store a set of vertices which create edges and their weights in
+   an adjacent list structure.
+2. Displays the vertices with their adjacent vertices in the adjacent
+   list.
+3. Perform a depth first search (BFS) starting from Dallas, choosing
+   the edge with the shortest distance.
+4. Displays the result of the DFS (discovery and back edges) and the
+   total miles traveled on the discovery edges
+
+
+*****************************************************************************************************************************
+Adjacent List Structure:
+-----------------------------------------------------------------------------------------------------------------------------
+Seattle -> San Francisco (807) -> Denver (1331) -> Chicago (2097)
+
+San Francisco -> Seattle (807) -> Los Angeles (381) -> Denver (1267)
+
+Denver -> Seattle (1331) -> Los Angeles (1015) -> San Francisco (1267) -> Chicago (1003) -> Kansas City (599)
+
+Chicago -> Seattle (2097) -> Denver (1003) -> Kansas City (533) -> New York (787) -> Boston (983)
+
+Los Angeles -> San Francisco (381) -> Denver (1015) -> Kansas City (1663) -> Dallas (1435)
+
+Kansas City -> Los Angeles (1663) -> Chicago (533) -> Denver (599) -> Dallas (496) -> Atlanta (864) -> New York (1260)
+
+Dallas -> Los Angeles (1435) -> Kansas City (496) -> Houston (239) -> Atlanta (781)
+
+Houston -> Dallas (239) -> Atlanta (810) -> Miami (1187)
+
+Miami -> Houston (1187) -> Atlanta (661)
+
+Atlanta -> Dallas (781) -> Kansas City (864) -> Houston (810) -> Miami (661) -> New York (888)
+
+New York -> Kansas City (1260) -> Chicago (787) -> Atlanta (888) -> Boston (214)
+
+Boston -> Chicago (983) -> New York (214)
+
+
+
+*****************************************************************************************************************************
+DFS Edges
+-----------------------------------------------------------------------------------------------------------------------------
+Discovery Edge: Dallas -> Houston(239)
+Discovery Edge: Houston -> Atlanta(810)
+Discovery Edge: Atlanta -> Miami(661)
+Discovery Edge: Atlanta -> Kansas City(864)
+Discovery Edge: Kansas City -> Chicago(533)
+Discovery Edge: Chicago -> New York(787)
+Discovery Edge: New York -> Boston(214)
+Back      Edge: Chicago -> Boston
+Discovery Edge: Kansas City -> Denver(1003)
+Discovery Edge: Denver -> Los Angeles(1015)
+Discovery Edge: Los Angeles -> San Francisco(381)
+Discovery Edge: San Francisco -> Seattle(807)
+Back      Edge: Denver -> San Francisco
+Back      Edge: Boston -> Seattle
+Back      Edge: Boston -> Seattle
+Back      Edge: Kansas City -> Denver
+Back      Edge: Miami -> New York
+Back      Edge: Atlanta -> Los Angeles
+Back      Edge: Miami -> New York
+Back      Edge: Houston -> Miami
+Back      Edge: Houston -> Kansas City
+Back      Edge: Houston -> Atlanta
+Back      Edge: Houston -> Los Angeles
+
+
+DFS Starting from Dallas:
+Dallas -> Houston -> Atlanta -> Miami -> Kansas City -> Chicago -> New York -> Boston -> Denver -> Los Angeles -> San Francisco -> Seattle
+
+MILES OF DISCOVERY EDGES: 7314
