@@ -1,0 +1,504 @@
+***************************************************************************
+*	PROGRAMMED BY : Milan Bui
+*	CLASS         : CS1D
+*	SECTION       : MW: 2:30p - 4:50p
+*	ASSIGNMENT #7 : Dictionary - Skip List
+***************************************************************************
+
+THIS PROGRAM WILL:
+1. Make a dictionary using a skip list. 
+2. Test all dictionary methods (insert, size, empty, find, findAll,
+   erase(k), erase(p), begin, and end
+3. Display the dictionary after changes
+
+
+DICTIONARY SIZE IS 0
+
+DICTIONARY IS EMPTY
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 18 AND VALUE Laguna Niguel...
+
+Pseudo Random Number Generator: TRUE
+
+INSERTING KEY 41 AND VALUE Mission Viejo...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 22 AND VALUE San Clemente...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 44 AND VALUE Irvine...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P1  ->  Key: 18   Value: Laguna Niguel
+P3  ->  Key: 22   Value: San Clemente
+P2  ->  Key: 41   Value: Mission Viejo
+P4  ->  Key: 44   Value: Irvine
+
+
+LEVEL 1:
+--------------------------------------
+P3  ->  Key: 22   Value: San Clemente
+P2  ->  Key: 41   Value: Mission Viejo
+P4  ->  Key: 44   Value: Irvine
+
+
+LEVEL 2:
+--------------------------------------
+P2  ->  Key: 41   Value: Mission Viejo
+
+
+LEVEL 3:
+--------------------------------------
+P2  ->  Key: 41   Value: Mission Viejo
+
+
+
+FINDING KEY 41...
+
+KEY 41 FOUND
+
+DELETING KEY 41...
+
+FINDING KEY 42...
+
+KEY 42 NOT FOUND
+
+CANNOT DELETE - KEY 42 DOES NOT EXIST
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P1  ->  Key: 18   Value: Laguna Niguel
+P3  ->  Key: 22   Value: San Clemente
+P4  ->  Key: 44   Value: Irvine
+
+
+LEVEL 1:
+--------------------------------------
+P3  ->  Key: 22   Value: San Clemente
+P4  ->  Key: 44   Value: Irvine
+
+
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 58 AND VALUE Lake Forest...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 32 AND VALUE San Diego...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 49 AND VALUE Anaheim...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P1  ->  Key: 18   Value: Laguna Niguel
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P4  ->  Key: 44   Value: Irvine
+P7  ->  Key: 49   Value: Anaheim
+P5  ->  Key: 58   Value: Lake Forest
+
+
+LEVEL 1:
+--------------------------------------
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P4  ->  Key: 44   Value: Irvine
+P5  ->  Key: 58   Value: Lake Forest
+
+
+
+FINDING KEY 58...
+
+KEY 58 FOUND
+
+DELETING KEY 58...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P1  ->  Key: 18   Value: Laguna Niguel
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P4  ->  Key: 44   Value: Irvine
+P7  ->  Key: 49   Value: Anaheim
+
+
+LEVEL 1:
+--------------------------------------
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P4  ->  Key: 44   Value: Irvine
+
+
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 31 AND VALUE Los Angeles...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 17 AND VALUE Orange...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 72 AND VALUE Palms Springs...
+
+Pseudo Random Number Generator: TRUE
+
+INSERTING KEY 41 AND VALUE Riverside...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P9  ->  Key: 17   Value: Orange
+P1  ->  Key: 18   Value: Laguna Niguel
+P3  ->  Key: 22   Value: San Clemente
+P8  ->  Key: 31   Value: Los Angeles
+P6  ->  Key: 32   Value: San Diego
+P11 ->  Key: 41   Value: Riverside
+P4  ->  Key: 44   Value: Irvine
+P7  ->  Key: 49   Value: Anaheim
+P10 ->  Key: 72   Value: Palms Springs
+
+
+LEVEL 1:
+--------------------------------------
+P9  ->  Key: 17   Value: Orange
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P11 ->  Key: 41   Value: Riverside
+P4  ->  Key: 44   Value: Irvine
+
+
+LEVEL 2:
+--------------------------------------
+P11 ->  Key: 41   Value: Riverside
+
+
+LEVEL 3:
+--------------------------------------
+P11 ->  Key: 41   Value: Riverside
+
+
+
+FINDING KEY 72...
+
+KEY 72 FOUND
+
+DELETING KEY 72...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P9  ->  Key: 17   Value: Orange
+P1  ->  Key: 18   Value: Laguna Niguel
+P3  ->  Key: 22   Value: San Clemente
+P8  ->  Key: 31   Value: Los Angeles
+P6  ->  Key: 32   Value: San Diego
+P11 ->  Key: 41   Value: Riverside
+P4  ->  Key: 44   Value: Irvine
+P7  ->  Key: 49   Value: Anaheim
+
+
+LEVEL 1:
+--------------------------------------
+P9  ->  Key: 17   Value: Orange
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P11 ->  Key: 41   Value: Riverside
+P4  ->  Key: 44   Value: Irvine
+
+
+LEVEL 2:
+--------------------------------------
+P11 ->  Key: 41   Value: Riverside
+
+
+LEVEL 3:
+--------------------------------------
+P11 ->  Key: 41   Value: Riverside
+
+
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 19 AND VALUE Brea...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 60 AND VALUE Santa Ana...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 35 AND VALUE Tustin...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 103 AND VALUE Oceanside...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 11 AND VALUE La Jolla...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P16 ->  Key: 11   Value: La Jolla
+P9  ->  Key: 17   Value: Orange
+P1  ->  Key: 18   Value: Laguna Niguel
+P12 ->  Key: 19   Value: Brea
+P3  ->  Key: 22   Value: San Clemente
+P8  ->  Key: 31   Value: Los Angeles
+P6  ->  Key: 32   Value: San Diego
+P14 ->  Key: 35   Value: Tustin
+P11 ->  Key: 41   Value: Riverside
+P4  ->  Key: 44   Value: Irvine
+P7  ->  Key: 49   Value: Anaheim
+P13 ->  Key: 60   Value: Santa Ana
+P15 ->  Key: 103  Value: Oceanside
+
+
+LEVEL 1:
+--------------------------------------
+P9  ->  Key: 17   Value: Orange
+P12 ->  Key: 19   Value: Brea
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P14 ->  Key: 35   Value: Tustin
+P11 ->  Key: 41   Value: Riverside
+P4  ->  Key: 44   Value: Irvine
+P15 ->  Key: 103  Value: Oceanside
+
+
+LEVEL 2:
+--------------------------------------
+P12 ->  Key: 19   Value: Brea
+P11 ->  Key: 41   Value: Riverside
+
+
+LEVEL 3:
+--------------------------------------
+P11 ->  Key: 41   Value: Riverside
+
+
+
+FINDING KEY 41...
+
+KEY 41 FOUND
+
+DELETING KEY 41...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P16 ->  Key: 11   Value: La Jolla
+P9  ->  Key: 17   Value: Orange
+P1  ->  Key: 18   Value: Laguna Niguel
+P12 ->  Key: 19   Value: Brea
+P3  ->  Key: 22   Value: San Clemente
+P8  ->  Key: 31   Value: Los Angeles
+P6  ->  Key: 32   Value: San Diego
+P14 ->  Key: 35   Value: Tustin
+P4  ->  Key: 44   Value: Irvine
+P7  ->  Key: 49   Value: Anaheim
+P13 ->  Key: 60   Value: Santa Ana
+P15 ->  Key: 103  Value: Oceanside
+
+
+LEVEL 1:
+--------------------------------------
+P9  ->  Key: 17   Value: Orange
+P12 ->  Key: 19   Value: Brea
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P14 ->  Key: 35   Value: Tustin
+P4  ->  Key: 44   Value: Irvine
+P15 ->  Key: 103  Value: Oceanside
+
+
+LEVEL 2:
+--------------------------------------
+P12 ->  Key: 19   Value: Brea
+
+
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 42 AND VALUE Vista...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 99 AND VALUE San Juan...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 29 AND VALUE Dana Point...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 88 AND VALUE El Segundo...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 41 AND VALUE San Clemente...
+
+Pseudo Random Number Generator: FALSE
+
+INSERTING KEY 62 AND VALUE Laguna Hills...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P16 ->  Key: 11   Value: La Jolla
+P9  ->  Key: 17   Value: Orange
+P1  ->  Key: 18   Value: Laguna Niguel
+P12 ->  Key: 19   Value: Brea
+P3  ->  Key: 22   Value: San Clemente
+P19 ->  Key: 29   Value: Dana Point
+P8  ->  Key: 31   Value: Los Angeles
+P6  ->  Key: 32   Value: San Diego
+P14 ->  Key: 35   Value: Tustin
+P21 ->  Key: 41   Value: San Clemente
+P17 ->  Key: 42   Value: Vista
+P4  ->  Key: 44   Value: Irvine
+P7  ->  Key: 49   Value: Anaheim
+P13 ->  Key: 60   Value: Santa Ana
+P22 ->  Key: 62   Value: Laguna Hills
+P20 ->  Key: 88   Value: El Segundo
+P18 ->  Key: 99   Value: San Juan
+P15 ->  Key: 103  Value: Oceanside
+
+
+LEVEL 1:
+--------------------------------------
+P9  ->  Key: 17   Value: Orange
+P12 ->  Key: 19   Value: Brea
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P14 ->  Key: 35   Value: Tustin
+P17 ->  Key: 42   Value: Vista
+P4  ->  Key: 44   Value: Irvine
+P15 ->  Key: 103  Value: Oceanside
+
+
+LEVEL 2:
+--------------------------------------
+P12 ->  Key: 19   Value: Brea
+P17 ->  Key: 42   Value: Vista
+
+
+
+DICTIONARY SIZE IS 18
+
+DICTIONARY IS NOT EMPTY
+
+First item in the skip list is KEY: 11 VALUE: La Jolla
+
+FINDING ALL WITH KEY 11...
+
+KEY 11 FOUND
+
+Positions of all entries with KEY 11 are (P16, P9)
+
+FINDING KEY 42...
+
+KEY 42 FOUND
+
+DELETING KEY AT POSITION 17...
+
+
+
+**************************************
+        DICTIONARY - SKIP LIST        
+**************************************
+LEVEL 0:
+--------------------------------------
+P16 ->  Key: 11   Value: La Jolla
+P9  ->  Key: 17   Value: Orange
+P1  ->  Key: 18   Value: Laguna Niguel
+P12 ->  Key: 19   Value: Brea
+P3  ->  Key: 22   Value: San Clemente
+P19 ->  Key: 29   Value: Dana Point
+P8  ->  Key: 31   Value: Los Angeles
+P6  ->  Key: 32   Value: San Diego
+P14 ->  Key: 35   Value: Tustin
+P21 ->  Key: 41   Value: San Clemente
+P4  ->  Key: 44   Value: Irvine
+P7  ->  Key: 49   Value: Anaheim
+P13 ->  Key: 60   Value: Santa Ana
+P22 ->  Key: 62   Value: Laguna Hills
+P20 ->  Key: 88   Value: El Segundo
+P18 ->  Key: 99   Value: San Juan
+P15 ->  Key: 103  Value: Oceanside
+
+
+LEVEL 1:
+--------------------------------------
+P9  ->  Key: 17   Value: Orange
+P12 ->  Key: 19   Value: Brea
+P3  ->  Key: 22   Value: San Clemente
+P6  ->  Key: 32   Value: San Diego
+P14 ->  Key: 35   Value: Tustin
+P4  ->  Key: 44   Value: Irvine
+P15 ->  Key: 103  Value: Oceanside
+
+
+LEVEL 2:
+--------------------------------------
+P12 ->  Key: 19   Value: Brea
+
+
+
+FINDING KEY 100...
+
+KEY 100 NOT FOUND
+
+END RETURNED
+
