@@ -1,0 +1,123 @@
+*****************************************************************************************************************************
+*  PROGRAMMED BY  : Milan Bui & Hai-Trang Nguyen & Riley Bradt
+*  CLASS          : CS1D
+*  SECTION        : MW 2:30 - 4:50
+*  ASSIGNMENT #11 : BFS & DFS Directed Edges
+*****************************************************************************************************************************
+
+
+This program will:
+1. Store a set of vertices which create edges and their weights in
+   an adjacent matrix structure.
+2. Displays the vertices with their adjacent vertices in the adjacent
+   matrix.
+3. Perform a breadth first search (BFS) starting from Dallas, choosing
+   the edge with the shortest distance.
+4. Displays the result of the BFS (edges) and the
+   total miles traveled on the discovery edges
+5. Perform a depth first search (DFS) starting from Dallas, choosing
+   the edge with the shortest distance.
+6. Displays the result of the DFS (edges) and the
+   total miles traveled on the discovery edges.
+7. Check to see if the graph is strongly connected.
+
+
+ADJACENCY MATRIX:
+
+                     Sea...   San...   Los...   Den...   Kan...   Chi...   Bos...   New...   Atl...   Mia...   Dal...   Hou...   
+
+         Seattle     0        807      0        1331     0        0        0        0        0        0        0        0        
+
+   San Francisco     0        0        381      0        0        0        0        0        0        0        0        0        
+
+     Los Angeles     0        0        0        1015     0        0        0        0        0        0        0        0        
+
+          Denver     0        1267     0        0        0        1003     0        0        0        0        0        0        
+
+     Kansas City     0        0        1663     599      0        533      0        1260     864      0        0        0        
+
+         Chicago     2097     0        0        0        0        0        983      0        0        0        0        0        
+
+          Boston     0        0        0        0        0        0        0        214      0        0        0        0        
+
+        New York     0        0        0        0        0        787      0        0        888      0        0        0        
+
+         Atlanta     0        0        0        0        0        0        0        0        0        661      0        0        
+
+           Miami     0        0        0        0        0        0        0        0        0        0        0        1187     
+
+          Dallas     0        0        1435     0        496      0        0        0        781      0        0        0        
+
+         Houston     0        0        0        0        0        0        0        0        810      0        239      0        
+
+
+
+
+BREADTH FIRST SEARCH (BFS):
+
+Discovery Edge: Dallas -> Kansas City(496)
+Discovery Edge: Dallas -> Atlanta(781)
+Discovery Edge: Dallas -> Los Angeles(1435)
+Discovery Edge: Kansas City -> Chicago(533)
+Discovery Edge: Kansas City -> Denver(599)
+Cross     Edge: Kansas City -> Atlanta
+Discovery Edge: Kansas City -> New York(1260)
+Cross     Edge: Kansas City -> Los Angeles
+Discovery Edge: Atlanta -> Miami(661)
+Cross     Edge: Los Angeles -> Denver
+Discovery Edge: Chicago -> Boston(983)
+Discovery Edge: Chicago -> Seattle(2097)
+Cross     Edge: Denver -> Chicago
+Discovery Edge: Denver -> San Francisco(1267)
+Cross     Edge: New York -> Chicago
+Cross     Edge: New York -> Atlanta
+Discovery Edge: Miami -> Houston(1187)
+Cross     Edge: Boston -> New York
+Cross     Edge: Seattle -> San Francisco
+Cross     Edge: Seattle -> Denver
+Cross     Edge: San Francisco -> Los Angeles
+
+
+BFS Starting from Dallas:
+Dallas -> Kansas City -> Atlanta -> Los Angeles -> Chicago -> Denver -> New York -> Miami -> Boston -> Seattle -> San Francisco -> Houston
+
+MILES OF DISCOVERY EDGES: 11299
+
+
+DEPTH FIRST SEARCH (DFS):
+
+Discovery Edge: Dallas -> Kansas City(496)
+Discovery Edge: Kansas City -> Chicago(533)
+Discovery Edge: Chicago -> Boston(983)
+Discovery Edge: Boston -> New York(214)
+Back      Edge: New York -> Chicago
+Discovery Edge: New York -> Atlanta(888)
+Discovery Edge: Atlanta -> Miami(661)
+Discovery Edge: Miami -> Houston(1187)
+Back      Edge: Houston -> Dallas
+Back      Edge: Houston -> Atlanta
+Discovery Edge: Boston -> Seattle(2097)
+Discovery Edge: Seattle -> San Francisco(807)
+Discovery Edge: San Francisco -> Los Angeles(381)
+Discovery Edge: Los Angeles -> Denver(1015)
+Back      Edge: Denver -> Chicago
+Back      Edge: Denver -> San Francisco
+Back      Edge: San Francisco -> Denver
+Back      Edge: Chicago -> Denver
+Back      Edge: Chicago -> Atlanta
+Back      Edge: Chicago -> New York
+Back      Edge: Chicago -> Los Angeles
+Back      Edge: Kansas City -> Atlanta
+Back      Edge: Kansas City -> Los Angeles
+
+
+DFS Starting from Dallas:
+Dallas -> Kansas City -> Chicago -> Boston -> New York -> Atlanta -> Miami -> Houston -> Seattle -> San Francisco -> Los Angeles -> Denver
+
+MILES OF DISCOVERY EDGES: 9262
+
+
+STRONG CONNECTIVITY: YES
+There are no vertices that are not visited in the graph G
+and in graph G' (graph G with the edges reversed).
+
