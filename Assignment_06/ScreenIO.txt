@@ -1,0 +1,437 @@
+***************************************************************************
+*	PROGRAMMED BY : Milan Bui
+*	CLASS         : CS1D
+*	SECTION       : MW: 2:30p - 4:50p
+*	ASSIGNMENT #6 : Hashing
+***************************************************************************
+
+THIS PROGRAM WILL:
+1. Create two map objects. One implemented with double hashing and
+   the other implemented with quadratic hashing using an array
+2. Insert values and keys into the maps
+3. Delete entries by key
+4. Display the map after each change
+
+
+***************************************************************************
+
+PART 1 - DOUBLE HASHING
+         DATA STRUCTURE - ARRAY
+
+***************************************************************************
+
+Inputting entry with KEY 18 and VALUE Laguna Niguel
+
+
+Inputting entry with KEY 41 and VALUE Mission Viejo
+
+
+Inputting entry with KEY 22 and VALUE San Clemente
+
+
+Inputting entry with KEY 44 and VALUE Irvine
+
+
+INDEX  KEY  CITY
+----------------------------
+10     41   Mission Viejo
+13     44   Irvine
+18     18   Laguna Niguel
+22     22   San Clemente
+
+
+Deleting entry with key 41...
+
+
+INDEX  KEY  CITY
+----------------------------
+13     44   Irvine
+18     18   Laguna Niguel
+22     22   San Clemente
+
+
+Inputting entry with KEY 58 and VALUE Lake Forest
+
+
+Inputting entry with KEY 32 and VALUE San Diego
+
+
+Inputting entry with KEY 49 and VALUE Anaheim
+
+
+INDEX  KEY  CITY
+----------------------------
+1      32   San Diego
+13     44   Irvine
+18     18   Laguna Niguel
+20     49   Anaheim
+22     22   San Clemente
+27     58   Lake Forest
+
+
+Deleting entry with key 58...
+
+
+INDEX  KEY  CITY
+----------------------------
+1      32   San Diego
+13     44   Irvine
+18     18   Laguna Niguel
+20     49   Anaheim
+22     22   San Clemente
+
+
+Inputting entry with KEY 31 and VALUE Los Angeles
+
+
+Inputting entry with KEY 17 and VALUE Orange
+
+
+Inputting entry with KEY 72 and VALUE Palms Spring
+
+
+Inputting entry with KEY 41 and VALUE Riverside
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+10     72   Palms Spring
+13     44   Irvine
+17     17   Orange
+18     18   Laguna Niguel
+20     49   Anaheim
+22     22   San Clemente
+30     41   Riverside
+
+
+Deleting entry with key 72...
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+13     44   Irvine
+17     17   Orange
+18     18   Laguna Niguel
+20     49   Anaheim
+22     22   San Clemente
+30     41   Riverside
+
+
+Inputting entry with KEY 19 and VALUE Brea
+
+
+Inputting entry with KEY 60 and VALUE Santa Ana
+
+
+Inputting entry with KEY 35 and VALUE Tustin
+
+
+Inputting entry with KEY 103 and VALUE Oceanside
+
+
+Inputting entry with KEY 11 and VALUE La Jolla
+
+
+Inputting entry with KEY 18 and VALUE Del Mar
+
+
+Inputting entry with KEY 22 and VALUE Aliso Viejo
+
+
+Inputting entry with KEY 49 and VALUE Laguna Beach
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+4      35   Tustin
+10     103  Oceanside
+11     11   La Jolla
+13     44   Irvine
+17     17   Orange
+18     18   Del Mar
+19     19   Brea
+20     49   Laguna Beach
+22     22   Aliso Viejo
+29     60   Santa Ana
+30     41   Riverside
+
+
+Deleting entry with key 41...
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+4      35   Tustin
+10     103  Oceanside
+11     11   La Jolla
+13     44   Irvine
+17     17   Orange
+18     18   Del Mar
+19     19   Brea
+20     49   Laguna Beach
+22     22   Aliso Viejo
+29     60   Santa Ana
+
+
+Inputting entry with KEY 42 and VALUE Vista
+
+
+Inputting entry with KEY 49 and VALUE San Diego
+
+
+Inputting entry with KEY 99 and VALUE San Juan
+
+
+Inputting entry with KEY 29 and VALUE Dana Point
+
+
+Inputting entry with KEY 88 and VALUE El Segundo
+
+
+Inputting entry with KEY 41 and VALUE San Clemente
+
+
+Inputting entry with KEY 62 and VALUE Laguna Hills
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+3      29   Dana Point
+4      35   Tustin
+6      99   San Juan
+7      42   Vista
+10     103  Oceanside
+11     11   La Jolla
+12     62   Laguna Hills
+13     44   Irvine
+17     17   Orange
+18     18   Del Mar
+19     19   Brea
+20     49   San Diego
+22     22   Aliso Viejo
+26     88   El Segundo
+29     60   Santa Ana
+30     41   San Clemente
+
+
+***************************************************************************
+
+PART 1 - QUADRATIC HASHING
+         DATA STRUCTURE - ARRAY
+
+***************************************************************************
+
+Inputting entry with KEY 18 and VALUE Laguna Niguel
+
+
+Inputting entry with KEY 41 and VALUE Mission Viejo
+
+
+Inputting entry with KEY 22 and VALUE San Clemente
+
+
+Inputting entry with KEY 44 and VALUE Irvine
+
+
+INDEX  KEY  CITY
+----------------------------
+10     41   Mission Viejo
+13     44   Irvine
+18     18   Laguna Niguel
+22     22   San Clemente
+
+
+Deleting entry with key 41...
+
+
+INDEX  KEY  CITY
+----------------------------
+13     44   Irvine
+18     18   Laguna Niguel
+22     22   San Clemente
+
+
+Inputting entry with KEY 58 and VALUE Lake Forest
+
+
+Inputting entry with KEY 32 and VALUE San Diego
+
+
+Inputting entry with KEY 49 and VALUE Anaheim
+
+
+INDEX  KEY  CITY
+----------------------------
+1      32   San Diego
+13     44   Irvine
+18     18   Laguna Niguel
+19     49   Anaheim
+22     22   San Clemente
+27     58   Lake Forest
+
+
+Deleting entry with key 58...
+
+
+INDEX  KEY  CITY
+----------------------------
+1      32   San Diego
+13     44   Irvine
+18     18   Laguna Niguel
+19     49   Anaheim
+22     22   San Clemente
+
+
+Inputting entry with KEY 31 and VALUE Los Angeles
+
+
+Inputting entry with KEY 17 and VALUE Orange
+
+
+Inputting entry with KEY 72 and VALUE Palms Spring
+
+
+Inputting entry with KEY 41 and VALUE Riverside
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+10     72   Palms Spring
+11     41   Riverside
+13     44   Irvine
+17     17   Orange
+18     18   Laguna Niguel
+19     49   Anaheim
+22     22   San Clemente
+
+
+Deleting entry with key 72...
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+11     41   Riverside
+13     44   Irvine
+17     17   Orange
+18     18   Laguna Niguel
+19     49   Anaheim
+22     22   San Clemente
+
+
+Inputting entry with KEY 19 and VALUE Brea
+
+
+Inputting entry with KEY 60 and VALUE Santa Ana
+
+
+Inputting entry with KEY 35 and VALUE Tustin
+
+
+Inputting entry with KEY 103 and VALUE Oceanside
+
+
+Inputting entry with KEY 11 and VALUE La Jolla
+
+
+Inputting entry with KEY 18 and VALUE Del Mar
+
+
+Inputting entry with KEY 22 and VALUE Aliso Viejo
+
+
+Inputting entry with KEY 49 and VALUE Laguna Beach
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+4      35   Tustin
+10     103  Oceanside
+11     41   Riverside
+12     11   La Jolla
+13     44   Irvine
+17     17   Orange
+18     18   Del Mar
+19     49   Laguna Beach
+20     19   Brea
+22     22   Aliso Viejo
+29     60   Santa Ana
+
+
+Deleting entry with key 41...
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+4      35   Tustin
+10     103  Oceanside
+12     11   La Jolla
+13     44   Irvine
+17     17   Orange
+18     18   Del Mar
+19     49   Laguna Beach
+20     19   Brea
+22     22   Aliso Viejo
+29     60   Santa Ana
+
+
+Inputting entry with KEY 42 and VALUE Vista
+
+
+Inputting entry with KEY 49 and VALUE San Diego
+
+
+Inputting entry with KEY 99 and VALUE San Juan
+
+
+Inputting entry with KEY 29 and VALUE Dana Point
+
+
+Inputting entry with KEY 88 and VALUE El Segundo
+
+
+Inputting entry with KEY 41 and VALUE San Clemente
+
+
+Inputting entry with KEY 62 and VALUE Laguna Hills
+
+
+INDEX  KEY  CITY
+----------------------------
+0      31   Los Angeles
+1      32   San Diego
+4      35   Tustin
+6      99   San Juan
+9      62   Laguna Hills
+10     103  Oceanside
+11     42   Vista
+12     11   La Jolla
+13     44   Irvine
+14     41   San Clemente
+17     17   Orange
+18     18   Del Mar
+19     49   San Diego
+20     19   Brea
+22     22   Aliso Viejo
+26     88   El Segundo
+29     60   Santa Ana
+30     29   Dana Point
+
+
