@@ -1,0 +1,81 @@
+*****************************************************************************************************************************
+*  PROGRAMMED BY  : Milan Bui & Hai-Trang Nguyen
+*  CLASS          : CS1D
+*  SECTION        : MW 2:30 - 4:50
+*  ASSIGNMENT #10 : BFS
+*****************************************************************************************************************************
+
+
+This program will:
+1. Store a set of vertices which create edges and their weights in
+   an adjacent matrix structure.
+2. Displays the vertices with their adjacent vertices in the adjacent
+   matrix.
+3. Perform a breadth first search (BFS) starting from Dallas, choosing
+   the edge with the shortest distance.
+4. Displays the result of the BFS (discovery and cross edges) and the
+   total miles traveled on the discovery edges
+
+
+ADJACENCY MATRIX:
+
+                     Sea...   San...   Los...   Den...   Kan...   Chi...   Bos...   New...   Atl...   Mia...   Dal...   Hou...   
+
+         Seattle     0        807      0        1331     0        2097     0        0        0        0        0        0        
+
+   San Francisco     807      0        381      1267     0        0        0        0        0        0        0        0        
+
+     Los Angeles     0        381      0        1015     1663     0        0        0        0        0        1435     0        
+
+          Denver     1331     1267     1015     0        599      1003     0        0        0        0        0        0        
+
+     Kansas City     0        0        1663     599      0        533      0        1260     864      0        496      0        
+
+         Chicago     2097     0        0        1003     533      0        983      787      0        0        0        0        
+
+          Boston     0        0        0        0        0        983      0        214      0        0        0        0        
+
+        New York     0        0        0        0        1260     787      214      0        888      0        0        0        
+
+         Atlanta     0        0        0        0        864      0        0        888      0        661      781      810      
+
+           Miami     0        0        0        0        0        0        0        0        661      0        0        1187     
+
+          Dallas     0        0        1435     0        496      0        0        0        781      0        0        239      
+
+         Houston     0        0        0        0        0        0        0        0        810      1187     239      0        
+
+
+
+
+BREADTH FIRST SEARCH (BFS):
+
+Discovery Edge: Dallas -> Houston(239)
+Discovery Edge: Dallas -> Kansas City(496)
+Discovery Edge: Dallas -> Atlanta(781)
+Discovery Edge: Dallas -> Los Angeles(1435)
+Cross     Edge: Houston -> Atlanta
+Discovery Edge: Houston -> Miami(1187)
+Discovery Edge: Kansas City -> Chicago(533)
+Discovery Edge: Kansas City -> Denver(599)
+Cross     Edge: Kansas City -> Atlanta
+Discovery Edge: Kansas City -> New York(1260)
+Cross     Edge: Kansas City -> Los Angeles
+Cross     Edge: Atlanta -> Miami
+Cross     Edge: Atlanta -> New York
+Discovery Edge: Los Angeles -> San Francisco(381)
+Cross     Edge: Los Angeles -> Denver
+Cross     Edge: Chicago -> New York
+Discovery Edge: Chicago -> Boston(983)
+Cross     Edge: Chicago -> Denver
+Discovery Edge: Chicago -> Seattle(2097)
+Cross     Edge: Denver -> San Francisco
+Cross     Edge: Denver -> Seattle
+Cross     Edge: New York -> Boston
+Cross     Edge: San Francisco -> Seattle
+
+
+DFS Starting from Dallas:
+Dallas -> Houston -> Kansas City -> Atlanta -> Los Angeles -> Miami -> Chicago -> Denver -> New York -> San Francisco -> Boston -> Seattle
+
+MILES OF DISCOVERY EDGES: 9991
